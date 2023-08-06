@@ -1,5 +1,3 @@
-import logo from './assets/imgs/logo.png'
-
 const Header = () => {
   return (
     <div className="header">
