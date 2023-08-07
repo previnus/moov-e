@@ -1,18 +1,31 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import { useState, useEffect } from 'react';
+import Footer from "./assets/components/layouts/Footer";
+import Header from "./assets/components/layouts/Header";
+import {Routes, Route} from 'react-router-dom';
+import Home from "./assets/components/pages/Home";
+import Trending from "./assets/components/pages/Trending";
+import WhatsNew from "./assets/components/pages/WhatsNew";
+import Pricing from "./assets/components/pages/Pricing";
+import Contact from "./assets/components/pages/Contact";
+import NotFound from "./assets/components/pages/NotFound";
 
-const App = () => {
 
-  useEffect(() => {
-    console.log('react initiated');
-  }, []);
+function App() {
 
   return (
     <>
-    <h1 class="text-3xl font-bold underline text-[#b91c1c]">Hello MOOV-e</h1>
-    <Header />
-    <Footer />
+      <Header />
+      <div className="content">
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/trending" element={<Trending />} />
+            <Route path="/whatsnew" element={<WhatsNew />} />
+            <Route exact path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+        </Routes>
+          
+      </div>
+      <Footer />
     </>
   )
 }
