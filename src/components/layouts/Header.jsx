@@ -41,11 +41,11 @@ const Header = () => {
                     <ModalContent backgroundColor="#232323">
                     <ModalCloseButton fontSize="20px" />
                     <ModalBody>
-                        <Box sx={navStyles}><NavLink to="/">Home</NavLink></Box>
-                        <Box sx={navStyles}><NavLink to="/trending">Trending</NavLink></Box>
-                        <Box sx={navStyles}><NavLink to="/whatsnew">What's New</NavLink></Box>
-                        <Box sx={navStyles}><NavLink to="/pricing">Pricing</NavLink></Box>
-                        <Box sx={navStyles}><NavLink to="/contact">Contact</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/" onClick={onClose}>Home</NavLink></Box>
+                        <Box sx={navStyles} ><NavLink to="/trending" onClick={onClose}>Trending</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/whatsnew" onClick={onClose}>What's New</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/pricing" onClick={onClose}>Pricing</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/contact" onClick={onClose}>Contact</NavLink></Box>
                     </ModalBody>
                     </ModalContent>
                 </Modal>
