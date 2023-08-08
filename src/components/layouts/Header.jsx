@@ -37,14 +37,15 @@ const Header = () => {
                 <Flex display={{base: "flex", md:"none"}}>
                     <HamburgerIcon fontSize="30px" onClick={onOpen}/>
                 </Flex>
-                <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
+                
+                <Drawer isOpen={isOpen} placement='right' onClose={onClose} size="full">
                 <DrawerOverlay />
                 <DrawerContent backgroundColor="#232323">
-                <DrawerCloseButton fontSize="20px"/>
+                <DrawerCloseButton fontSize="20px" margin="20px 10px 0 0"/>
 
                 <DrawerBody>
                         <Box sx={navStyles}><NavLink to="/" onClick={onClose}>Home</NavLink></Box>
-                        <Box sx={navStyles} ><NavLink to="/trending" onClick={onClose}>Trending</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/trending" onClick={onClose}>Trending</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/whatsnew" onClick={onClose}>What's New</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/pricing" onClick={onClose}>Pricing</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/contact" onClick={onClose}>Contact</NavLink></Box>
