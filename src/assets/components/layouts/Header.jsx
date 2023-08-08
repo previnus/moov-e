@@ -4,8 +4,8 @@ import {NavLink, Link} from "react-router-dom"
 const Header = () => {
     return ( 
         <>
-        <Container as="header" maxWidth="1140px">
-           <Flex >
+        <Container as="header" maxWidth="1140px" marginBottom="25px">
+           <Flex alignItems="center">
                 <h2><Link to="/">Logo</Link></h2>
                 <Spacer />
                 <Flex>
