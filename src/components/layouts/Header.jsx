@@ -40,7 +40,7 @@ const Header = () => {
                 
                 <Drawer isOpen={isOpen} placement='right' onClose={onClose} size="full">
                 <DrawerOverlay />
-                <DrawerContent backgroundColor="#232323">
+                <DrawerContent backgroundColor="#232323" padding="20px">
                 <DrawerCloseButton fontSize="20px" margin="20px 10px 0 0"/>
 
                 <DrawerBody>
