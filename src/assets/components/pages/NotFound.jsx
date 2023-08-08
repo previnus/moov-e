@@ -1,9 +1,15 @@
+import { Button, Container, Text } from "@chakra-ui/react";
+import {Link} from "react-router-dom"
+
 const NotFound = () => {
     return ( 
-        <div className="notfound">
-        <h2>404 Not Found</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, cumque inventore saepe tenetur cupiditate, odio eaque tempore, reiciendis consequuntur quam error illo unde quod obcaecati minima perferendis quaerat. Excepturi, quasi?</p>
-        </div>
+        <>
+        <Container as="section" textAlign="center" maxWidth="1140px;">
+            <Text as="h1">404 Not Found!!</Text>
+            <Text as="h3">UHh Oh!! This page was not found</Text>
+            <Button><Link to="/">Click to return</Link></Button>
+        </Container>
+        </>
      );
 }
  

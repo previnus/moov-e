@@ -1,9 +1,14 @@
+import { Button, Container, Text } from "@chakra-ui/react";
+import {Link} from "react-router-dom"
+
 const WhatsNew = () => {
     return ( 
-        <div className="new-release">
-        <h2>What's New</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, cumque inventore saepe tenetur cupiditate, odio eaque tempore, reiciendis consequuntur quam error illo unde quod obcaecati minima perferendis quaerat. Excepturi, quasi?</p>
-        </div>
+        <>
+        <Container as="section" textAlign="center" maxWidth="1140px;">
+            <Text as="h1">This the WHAT'S NEW Page</Text>
+            <Text as="h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet minima ut, aspernatur voluptatem perferendis odio non quaerat animi provident tempora reprehenderit consequuntur, laborum asperiores veritatis numquam? Consectetur ducimus rerum nobis.</Text>
+        </Container>
+        </>
      );
 }
  

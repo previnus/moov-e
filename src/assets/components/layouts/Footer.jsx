@@ -1,6 +1,12 @@
+import { Container, Text } from "@chakra-ui/react";
+
 const Footer = () => {
     return ( 
-        <h2>Copyright © 2023 | MooV-e</h2>
+        <>
+        <Container as="footer" maxWidth="1140px">
+                <Text align="center">Copyright © 2023 | MooV-e</Text>
+        </Container>
+        </>
      );
 }
  

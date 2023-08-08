@@ -1,18 +1,23 @@
-import {NavLink} from "react-router-dom"
+import { Box, Container, Flex, Spacer } from "@chakra-ui/react";
+import {NavLink, Link} from "react-router-dom"
 
 const Header = () => {
     return ( 
-        <nav>
-            <h2>Logo</h2>
-            <div className="links">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/trending">Trending</NavLink>
-                <NavLink to="/whatsnew">What's New</NavLink>
-                <NavLink to="/pricing">Pricing</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-
-            </div>
-        </nav>
+        <>
+        <Container as="header" maxWidth="1140px">
+           <Flex >
+                <h2><Link to="/">Logo</Link></h2>
+                <Spacer />
+                <Flex>
+                    <Box padding="20px"><NavLink to="/">Home</NavLink></Box>
+                    <Box padding="20px"><NavLink to="/trending">Trending</NavLink></Box>
+                    <Box padding="20px"><NavLink to="/whatsnew">What's New</NavLink></Box>
+                    <Box padding="20px"><NavLink to="/pricing">Pricing</NavLink></Box>
+                    <Box padding="20px"><NavLink to="/contact">Contact</NavLink></Box>
+                </Flex>
+            </Flex> 
+        </Container>
+        </>
      );
 }
  
