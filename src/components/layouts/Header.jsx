@@ -37,7 +37,7 @@ const Header = () => {
                 <Flex display={{base: "flex", md:"none"}}>
                     <HamburgerIcon fontSize="30px" onClick={onOpen}/>
                 </Flex>
-                <Drawer isOpen={isOpen} placement='right' onClose={onClose} size="full">
+                <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
                 <DrawerOverlay />
                 <DrawerContent backgroundColor="#232323">
                 <DrawerCloseButton fontSize="20px"/>
