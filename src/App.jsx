@@ -1,12 +1,12 @@
-import Footer from "./assets/components/layouts/Footer";
-import Header from "./assets/components/layouts/Header";
-import {Routes, Route} from 'react-router-dom';
-import Home from "./assets/components/pages/Home";
-import Trending from "./assets/components/pages/Trending";
-import WhatsNew from "./assets/components/pages/WhatsNew";
-import Pricing from "./assets/components/pages/Pricing";
-import Contact from "./assets/components/pages/Contact";
-import NotFound from "./assets/components/pages/NotFound";
+import Footer from "./components/layouts/Footer"
+import Header from "./components/layouts/Header"
+import {Routes, Route} from 'react-router-dom'
+import Home from "./components/pages/Home"
+import Trending from "./components/pages/Trending"
+import WhatsNew from "./components/pages/WhatsNew"
+import Pricing from "./components/pages/Pricing"
+import Contact from "./components/pages/Contact"
+import NotFound from "./components/pages/NotFound"
 
 
 function App() {
