@@ -1,6 +1,7 @@
-import { StarIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, StarIcon } from "@chakra-ui/icons";
 import { Box, Container, Flex, Spacer, Text, Image } from "@chakra-ui/react";
 import {NavLink, Link} from "react-router-dom"
+
 
 const Header = () => {
     const navStyles = {
@@ -18,16 +19,19 @@ const Header = () => {
            <Flex alignItems="center">
                 <Box margin="15px 0">
                         <Link to="/">
-                            <Image maxWidth="250px" src="/assets/imgs/logo.png" />
+                            <Image maxWidth={{base: "150px", md:"250px"}} src="/assets/imgs/logo.png" />
                         </Link>
                 </Box>
                 <Spacer />
-                <Flex>
+                <Flex display={{base: "none", md:"flex"}}>
                     <Box sx={navStyles}><NavLink to="/">Home</NavLink></Box>
                     <Box sx={navStyles}><NavLink to="/trending">Trending</NavLink></Box>
                     <Box sx={navStyles}><NavLink to="/whatsnew">What's New</NavLink></Box>
                     <Box sx={navStyles}><NavLink to="/pricing">Pricing</NavLink></Box>
                     <Box sx={navStyles}><NavLink to="/contact">Contact</NavLink></Box>
+                </Flex>
+                <Flex display={{base: "flex", md:"none"}}>
+                    <HamburgerIcon fontSize="30px"/>
                 </Flex>
             </Flex> 
         </Container>

@@ -14,7 +14,6 @@ function App() {
   return (
     <>
       <Header />
-      <div className="content">
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/trending" element={<Trending />} />
@@ -24,7 +23,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
         </Routes>
           
-      </div>
       <Footer />
     </>
   )
