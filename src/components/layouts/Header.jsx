@@ -3,6 +3,7 @@ import { Box, Container, Flex, Spacer, Text, Image, Button } from "@chakra-ui/re
 import {NavLink, Link} from "react-router-dom"
 import {Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton } from '@chakra-ui/react'
 import { useDisclosure } from "@chakra-ui/react";
+import { Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton } from '@chakra-ui/react'
 
 const Header = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -36,19 +37,21 @@ const Header = () => {
                 <Flex display={{base: "flex", md:"none"}}>
                     <HamburgerIcon fontSize="30px" onClick={onOpen}/>
                 </Flex>
-                <Modal isOpen={isOpen} size="full" onClose={onClose} motionPreset='slideInBottom'>
-                    <ModalOverlay />
-                    <ModalContent backgroundColor="#232323">
-                    <ModalCloseButton fontSize="20px" />
-                    <ModalBody>
+                <Drawer isOpen={isOpen} placement='right' onClose={onClose} size="full">
+                <DrawerOverlay />
+                <DrawerContent backgroundColor="#232323">
+                <DrawerCloseButton fontSize="20px"/>
+
+                <DrawerBody>
                         <Box sx={navStyles}><NavLink to="/" onClick={onClose}>Home</NavLink></Box>
                         <Box sx={navStyles} ><NavLink to="/trending" onClick={onClose}>Trending</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/whatsnew" onClick={onClose}>What's New</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/pricing" onClick={onClose}>Pricing</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/contact" onClick={onClose}>Contact</NavLink></Box>
-                    </ModalBody>
-                    </ModalContent>
-                </Modal>
+                </DrawerBody>
+
+                </DrawerContent>
+            </Drawer>
             </Flex> 
         </Container>
         </>
