@@ -1,12 +1,6 @@
-import Footer from "./components/layouts/Footer"
-import Header from "./components/layouts/Header"
+import {Footer, Header} from "./components/layouts"
 import {Routes, Route} from 'react-router-dom'
-import Home from "./components/pages/Home"
-import Trending from "./components/pages/Trending"
-import WhatsNew from "./components/pages/WhatsNew"
-import Pricing from "./components/pages/Pricing"
-import Contact from "./components/pages/Contact"
-import NotFound from "./components/pages/NotFound"
+import {Home, Trending, WhatsNew, Pricing, Contact, NotFound} from "./components/pages"
 
 
 function App() {
