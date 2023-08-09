@@ -25,7 +25,7 @@ const Header = () => {
             <Flex alignItems="center">
                     <Box margin="15px 0">
                             <Link to="/">
-                                <Image maxWidth={{base: "150px", md:"250px"}} src="/assets/imgs/logo.png" />
+                                <Image maxWidth={{base: "175px", md:"250px"}} src="/assets/imgs/logo.png" />
                             </Link>
                     </Box>
                     <Spacer />
