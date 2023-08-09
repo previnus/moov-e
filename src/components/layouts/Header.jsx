@@ -1,7 +1,7 @@
-import { HamburgerIcon, StarIcon } from "@chakra-ui/icons";
-import { Box, Container, Flex, Spacer, Text, Image, Button } from "@chakra-ui/react";
-import {NavLink, Link} from "react-router-dom"
-import {Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from '@chakra-ui/react'
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Box, Container, Flex, Spacer, Image} from "@chakra-ui/react";
+import { NavLink, Link } from "react-router-dom"
+import { Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from '@chakra-ui/react'
 import { useDisclosure } from "@chakra-ui/react"
 
 const Header = () => {
@@ -11,6 +11,7 @@ const Header = () => {
         padding: "20px",
         textTransform: "uppercase",
         fontWeight: "600",
+        color: "white",
         ":hover": {
             color: "#CB4335"
         },
@@ -18,7 +19,8 @@ const Header = () => {
 
     return ( 
         <>
-        <Container as="header" maxWidth="1140px" marginBottom="25px">
+        <Box background="#252525" borderBottom="1px solid #111111">
+        <Container as="header" maxWidth="1140px" >
            <Flex alignItems="center">
                 <Box margin="15px 0">
                         <Link to="/">
@@ -52,6 +54,8 @@ const Header = () => {
                 </Modal>
             </Flex> 
         </Container>
+        </Box>
+        
         </>
      );
 }
