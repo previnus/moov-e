@@ -20,7 +20,7 @@ const Header = () => {
 
     return ( 
         <>
-        <Box background="#252525" borderBottom="1px solid #111111" position="sticky">
+        <Box background="#252525" borderBottom="1px solid #111111">
             <Container as="header" maxWidth="1140px" >
             <Flex alignItems="center">
                     <Box margin="15px 0">
