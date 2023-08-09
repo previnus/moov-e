@@ -3,6 +3,7 @@ import { Box, Container, Flex, Spacer, Image} from "@chakra-ui/react";
 import { NavLink, Link } from "react-router-dom"
 import { Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from '@chakra-ui/react'
 import { useDisclosure } from "@chakra-ui/react"
+import SearchBar from "../SearchBar";
 
 const Header = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -34,7 +35,13 @@ const Header = () => {
                         <Box sx={navStyles}><NavLink to="/whatsnew">What's New</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/pricing">Pricing</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/contact">Contact</NavLink></Box>
+                        
                     </Flex>
+
+                    <Flex display={{base: "none", md:"flex"}}>
+                    <SearchBar />
+                    </Flex>
+                    
                     <Flex display={{base: "flex", md:"none"}}>
                         <HamburgerIcon fontSize="30px" onClick={onOpen}/>
                     </Flex>
@@ -53,6 +60,7 @@ const Header = () => {
                         </ModalContent>
                     </Modal>
                 </Flex> 
+                <Box display={{base: "flex", md:"none"}} margin="15px 0"><SearchBar /></Box>
             </Container>
         </Box>
         
