@@ -37,7 +37,7 @@ const Header = () => {
                         <Box sx={navStyles}><NavLink to="/contact">Contact</NavLink></Box>
                         
                     </Flex>
-
+                    <Spacer />
                     <Flex display={{base: "none", md:"flex"}}>
                     <SearchBar />
                     </Flex>
