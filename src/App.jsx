@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import {Home, Trending, WhatsNew, Pricing, Contact, NotFound} from "./components/pages"
 
 
-function App() {
+const App = () => {
 
   return (
     <>
