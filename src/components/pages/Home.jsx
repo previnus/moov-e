@@ -1,5 +1,4 @@
-import { Container, Image, Text, Heading, Box } from "@chakra-ui/react";
-import {Link} from "react-router-dom"
+import { Container, Text, Heading, Box } from "@chakra-ui/react";
 
 const Home = () => {
     const homeHeroStyles = {
