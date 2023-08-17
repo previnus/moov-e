@@ -27,3 +27,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     border-color: #CB4335 !important;
     box-shadow: 0 0 0 1px #CB4335 !important;
 }
+
+input{
+  color: #fff;
+}

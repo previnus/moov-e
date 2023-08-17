@@ -19,7 +19,7 @@ const MovieCard = ({movie}) => {
   return (
     <Card> 
         <CardHeader padding="0">
-        <Image
+        <Link to={`/movie/${movie.id}`}><Image
             src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} 
             alt={movie.path}
             height="200px"
@@ -27,7 +27,7 @@ const MovieCard = ({movie}) => {
             borderRadius="5px 5px 0 0"
             sx= {imageStyles}
             fallbackSrc='https://via.placeholder.com/150'
-          />
+          /></Link>
         </CardHeader>
 
         <CardBody textAlign="center">
@@ -35,7 +35,7 @@ const MovieCard = ({movie}) => {
             <Heading color="black" size='md'>{movie.title}</Heading>
           </Box>
           <Box>
-            <Link to="/"><Text  sx={linkStyles}>View Movie</Text></Link>
+            <Link to={`/movie/${movie.id}`}><Text  sx={linkStyles}>View Movie</Text></Link>
           </Box>
             
         </CardBody>
