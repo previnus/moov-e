@@ -22,7 +22,7 @@ const Trending = () => {
     return ( 
         <Box id="home-hero" minHeight="80vh" backgroundColor="rgba(0, 0, 0, 1)" display="flex">
             <Container as="section" maxWidth={{ xl: "1140px"}} margin="2rem auto">
-                <SimpleGrid spacing={4} templateColumns='repeat(4, minmax(200px, 1fr))'>
+                <SimpleGrid spacing={4} columns={{sm: 2, md: 4}}>
                     {trending.map((movie) => {
                         return <MovieCard key={movie.id} movie={movie} />;
                         })}
