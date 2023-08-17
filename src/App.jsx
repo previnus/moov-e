@@ -1,6 +1,6 @@
 import {Footer, Header} from "./components/layouts"
 import {Routes, Route} from 'react-router-dom'
-import {Home, Trending, WhatsNew, Pricing, Contact, NotFound} from "./components/pages"
+import {Home, Trending, WhatsNew, Pricing, Contact, NotFound, Movie} from "./components/pages"
 
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
             <Route path="/whatsnew" element={<WhatsNew />} />
             <Route exact path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/movie/:id" element={<Movie />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
           
