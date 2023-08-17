@@ -30,7 +30,7 @@ const MovieCard = ({movie}) => {
         </CardHeader>
 
         <CardBody textAlign="center">
-          <Box minHeight="75px">
+          <Box minHeight="75px" maxWidth="200px">
             <Heading color="black" size='md'>{movie.title}</Heading>
           </Box>
           <Box>

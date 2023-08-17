@@ -22,7 +22,7 @@ const Upcoming = () => {
     return ( 
         <Box id="home-hero" minHeight="80vh" backgroundColor="rgba(0, 0, 0, 1)" display="flex">
             <Container as="section" maxWidth={{ xl: "1140px"}} margin="2rem auto">
-                <SimpleGrid spacing={4} columns={{sm: 2, md: 4}}>
+                <SimpleGrid spacing={4} columns={{sm: 1, md: 4}}>
                     {upcoming.map((movie) => {
                         return <MovieCard key={movie.id} movie={movie} />;
                         })}
