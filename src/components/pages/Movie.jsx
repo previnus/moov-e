@@ -27,12 +27,7 @@ const Movie = () => {
             'overview' : movie.overview,
             'release_date' : movie.release_date,
         });
-
-        return movie;
     };
-
-
-    const moviess = fetchMovie();
 
 
     const movieHeroStyles = {

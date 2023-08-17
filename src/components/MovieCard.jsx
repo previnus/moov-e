@@ -26,7 +26,7 @@ const MovieCard = ({movie}) => {
             objectFit="cover"
             borderRadius="5px 5px 0 0"
             sx= {imageStyles}
-            fallbackSrc='https://via.placeholder.com/150'
+            fallbackSrc='https://via.placeholder.com/265'
           /></Link>
         </CardHeader>
 

@@ -5,3 +5,4 @@ export { default as Pricing } from './Pricing';
 export { default as Upcoming } from './Upcoming';
 export { default as Trending } from './Trending';
 export { default as Movie } from './Movie';
+export { default as Search } from './Search';

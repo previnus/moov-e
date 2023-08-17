@@ -26,7 +26,7 @@ const Contact = () => {
                     src="jotform-embed.htm"
                     style={{
                         width: '100%',
-                        height: '500px',
+                        height: '600px',
                         overflow: 'hidden',
                         color: "#fff"
                     }}
