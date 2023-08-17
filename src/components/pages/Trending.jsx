@@ -5,7 +5,7 @@ import MovieCard from "../MovieCard";
 const Trending = () => {
     const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
     const baseUrl = import.meta.env.VITE_REACT_APP_BASE_URL;
-    const url = `${baseUrl}/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+    const url = `${baseUrl}/popular?api_key=${apiKey}&language=en-US&page=1`;
     const [trending, setTrending] = useState([]);
 
     useEffect(() => {

@@ -18,9 +18,17 @@ const Header = () => {
         },
     }
 
+    const navBar = {
+        overflow: "hidden",
+        position: 'sticky',
+        zIndex: 999,
+        top: 0,
+        width: '100%',
+    }
+
     return ( 
         <>
-        <Box background="#252525" borderBottom="1px solid #111111">
+        <Box background="#252525" borderBottom="1px solid #111111" sx={navBar}>
             <Container as="header" maxWidth="1140px" >
             <Flex alignItems="center">
                     <Box margin="15px 0">

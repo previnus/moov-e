@@ -22,7 +22,8 @@ const MovieCard = ({movie}) => {
         <Image
             src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path} 
             alt={movie.path}
-            height="150px"
+            height="200px"
+            objectFit="cover"
             borderRadius="5px 5px 0 0"
             sx= {imageStyles}
             fallbackSrc='https://via.placeholder.com/150'
