@@ -53,7 +53,7 @@ const Header = () => {
                         <ModalBody>
                             <Box sx={navStyles}><NavLink to="/" onClick={onClose}>Home</NavLink></Box>
                             <Box sx={navStyles} ><NavLink to="/trending" onClick={onClose}>Trending</NavLink></Box>
-                            <Box sx={navStyles}><NavLink to="/whatsnew" onClick={onClose}>What's New</NavLink></Box>
+                            <Box sx={navStyles}><NavLink to="/upcoming" onClick={onClose}>Upcoming</NavLink></Box>
                             <Box sx={navStyles}><NavLink to="/pricing" onClick={onClose}>Pricing</NavLink></Box>
                             <Box sx={navStyles}><NavLink to="/contact" onClick={onClose}>Contact</NavLink></Box>
                         </ModalBody>
