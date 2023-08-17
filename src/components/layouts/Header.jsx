@@ -32,7 +32,7 @@ const Header = () => {
                     <Flex display={{base: "none", md:"flex"}}>
                         <Box sx={navStyles}><NavLink to="/">Home</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/trending">Trending</NavLink></Box>
-                        <Box sx={navStyles}><NavLink to="/whatsnew">What's New</NavLink></Box>
+                        <Box sx={navStyles}><NavLink to="/upcoming">Upcoming</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/pricing">Pricing</NavLink></Box>
                         <Box sx={navStyles}><NavLink to="/contact">Contact</NavLink></Box>
                         
