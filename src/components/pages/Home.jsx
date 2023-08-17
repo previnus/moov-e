@@ -35,7 +35,7 @@ const Home = () => {
 
             <Carousel showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true} interval={4000}>
                 {nowPlaying.map((movie) => {
-                            return <Box height="85vh"><Image height="100%" objectFit="cover" key={movie.id} src={"https://image.tmdb.org/t/p/original" + movie.backdrop_path} fallbackSrc='https://via.placeholder.com/150'/></Box>;
+                            return <Box height="85vh" key={movie.id}><Image height="100%" objectFit="cover" key={movie.id} src={"https://image.tmdb.org/t/p/original" + movie.backdrop_path} fallbackSrc='https://via.placeholder.com/150'/></Box>;
                             })}
             </Carousel>
             <Box id="home-hero" padding="2rem">
