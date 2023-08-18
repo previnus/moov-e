@@ -41,6 +41,10 @@ const Movie = () => {
         backgroundSize: "cover",
     }
 
+    const youtubeOpts = {
+        width: '450',
+        height: '400'
+    }
 
 
     return ( 
@@ -128,7 +132,7 @@ const Movie = () => {
                                 <TabPanel>
                                     <SimpleGrid spacing={4} columns={{sm: 1, md: 1}}>
                                     {videoData.map((video) => {
-                                            return <YouTube videoId={video.key} width="50px" />
+                                            return <YouTube opts={youtubeOpts} videoId={video.key} width="50px" />
                                         })}
                                     </SimpleGrid>
                                 </TabPanel>
