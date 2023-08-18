@@ -70,12 +70,11 @@ const Movie = () => {
                                 })}
                             </Text>
                             <TabList>
-                                <Tab>Overview</Tab>
-                                <Tab>Datasheet</Tab>
-                                <Tab>Gallery</Tab>
-                                <Tab>Trailers</Tab>
+                                <Tab _selected={{ color: '#CB4335'}}>Overview</Tab>
+                                <Tab _selected={{ color: '#CB4335'}}>Datasheet</Tab>
+                                <Tab _selected={{ color: '#CB4335'}}>Gallery</Tab>
+                                <Tab _selected={{ color: '#CB4335'}}>Trailers</Tab>
                             </TabList>
-                            <TabIndicator mt="-1.5px" height="2px" bg="#CB4335" borderRadius="1px" />
                             <TabPanels>
                                 <TabPanel>         
                                     <Text mt="25px">{movieData.overview}</Text>
