@@ -63,11 +63,17 @@ const Movie = () => {
                     <Box mt="0">
                         <Tabs isFitted variant='unstyled'>
                             <Heading fontSize="30px" as="h3" mb="10px">{movieData.title}</Heading>
-                            <Heading fontSize="20px" fontWeight="300" fontStyle="italic" as="h6" mb="15px">{movieData.tagline}</Heading>
-                            <Text color="#CB4335" mb="25px">
-                                {genreData.map((genre) => {
-                                return <>{genre.name}, </>;
+                            <Heading color="#CB4335" fontSize="22px" fontWeight="300" fontStyle="italic" as="h6" mb="10px">{movieData.tagline}</Heading>
+                            <Text fontSize="15px" fontWeight="300"  mb="25px">
+                                ( 
+                                {genreData.map((genre, index, array) => {
+                                    if(index !== array.length -1){
+                                        return <>{genre.name}, </>;
+                                    }else{
+                                        return <>{genre.name}</>
+                                    }
                                 })}
+                             )  
                             </Text>
                             <TabList>
                                 <Tab _selected={{ color: '#CB4335'}}>Overview</Tab>
@@ -77,7 +83,7 @@ const Movie = () => {
                             </TabList>
                             <TabPanels>
                                 <TabPanel>         
-                                    <Text mt="25px">{movieData.overview}</Text>
+                                    <Text>{movieData.overview}</Text>
                                 </TabPanel>
                                 
                                 <TabPanel>
@@ -102,7 +108,7 @@ const Movie = () => {
                                             </Tr>
                                             <Tr>
                                                 <Td color="#CB4335">Homepage</Td>
-                                                <Td><a href={movieData.homepage} target="_blank">{movieData.homepage}</a></Td>
+                                                <Td><a href={movieData.homepage} target="_blank">Visit Website</a></Td>
                                             </Tr>
                                             <Tr>
                                                 <Td color="#CB4335">Budget</Td>
@@ -114,7 +120,7 @@ const Movie = () => {
                                             </Tr>
                                             <Tr>
                                                 <Td color="#CB4335">Votes</Td>
-                                                <Td>{movieData.vote_average} Avg. Votes out of {movieData.vote_count} Votes</Td>
+                                                <Td>{movieData.vote_average} Avg. Votes of {movieData.vote_count} Votes</Td>
                                             </Tr>
                                             </Tbody>
                                         </Table>
@@ -131,7 +137,7 @@ const Movie = () => {
                                 <TabPanel>
                                     <SimpleGrid spacing={4} columns={{sm: 1, md: 1}}>
                                     {videoData.map((video) => {
-                                            return <YouTube opts={youtubeOpts} videoId={video.key} width="50px" />
+                                            return <YouTube opts={youtubeOpts} videoId={video.key} />
                                         })}
                                     </SimpleGrid>
                                 </TabPanel>
