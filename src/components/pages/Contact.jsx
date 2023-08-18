@@ -1,6 +1,7 @@
 import { Container, Box, Heading, Text, Code } from "@chakra-ui/react";
 
 const Contact = () => {
+
     const contactHeroStyles = {
         backgroundImage: "https://source.unsplash.com/mHusyBu4bxM/1920x1080",
         backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -37,3 +38,5 @@ const Contact = () => {
 }
  
 export default Contact;
+
+
