@@ -1,5 +1,6 @@
 App Name : MOOV-e
 App URL: https://moov-e.vercel.app/
+Backup APP URL: https://moov-e.onrender.com/
 
 Synopsis:
 Introducing MOOV-E, your go-to movie app for an immersive cinematic experience. With its sleek and responsive design, MOOV-E delivers seamless movie browsing on any device. Uncover your favorite films effortlessly with the Movie Search feature and explore diverse categories like Most Popular, Trending, and New releases. Dive into each movie's captivating world through detailed descriptions and thrilling preview trailers.
