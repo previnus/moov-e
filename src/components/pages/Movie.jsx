@@ -42,8 +42,8 @@ const Movie = () => {
     }
 
     const youtubeOpts = {
-        width: '450',
-        height: '400'
+        width: "100%",
+        height: '250'
     }
 
 
@@ -119,8 +119,12 @@ const Movie = () => {
                                                 <Td>${movieData.revenue}</Td>
                                             </Tr>
                                             <Tr>
-                                                <Td color="#CB4335">Votes</Td>
-                                                <Td>{movieData.vote_average} Avg. Votes of {movieData.vote_count} Votes</Td>
+                                                <Td color="#CB4335">Average Votes</Td>
+                                                <Td>{movieData.vote_average}</Td>
+                                            </Tr>
+                                            <Tr>
+                                                <Td color="#CB4335">Total Votes</Td>
+                                                <Td>{movieData.vote_count}</Td>
                                             </Tr>
                                             </Tbody>
                                         </Table>
