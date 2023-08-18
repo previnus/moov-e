@@ -37,7 +37,7 @@ const Pricing = () => {
         <Box backgroundColor='#000' >
             <Container as="section" maxWidth={{ xl: "1140px"}} paddingTop="50px" pb="50px">
                 <SimpleGrid spacing={4} columns={{sm: 1, md: 3}}>
-                    <Box width={{sm: "100%", md: "80%"}}  border="1px solid #fff" padding="25px" borderRadius="25px">
+                    <Box width="100%" border="1px solid #fff" padding="25px" borderRadius="25px">
                         <Heading as="h2" fontSize="20px" textAlign="center" mb="15px">BRONZE</Heading>
                         <Heading as="h3" fontSize="16px" textAlign="center" mb="25px" color="#CB4335">Rs. 500 / Monthly</Heading>
                         <hr />
@@ -63,7 +63,7 @@ const Pricing = () => {
                         </Flex>
                         
                     </Box>
-                    <Box width={{sm: "100%", md: "80%"}} border="1px solid #fff" padding="25px" borderRadius="25px">
+                    <Box width="100%" border="1px solid #fff" padding="25px" borderRadius="25px">
                         <Heading as="h2" fontSize="20px" textAlign="center" mb="15px">SILVER</Heading>
                         <Heading as="h3" fontSize="16px" textAlign="center" mb="25px" color="#CB4335">Rs. 1000 / Monthly</Heading>
                     
@@ -94,7 +94,7 @@ const Pricing = () => {
                         </Flex>
                         
                     </Box>
-                    <Box width={{sm: "100%", md: "80%"}}  border="1px solid #fff" padding="25px" borderRadius="25px">
+                    <Box width="100%" border="1px solid #fff" padding="25px" borderRadius="25px">
                         <Heading as="h2" fontSize="20px" textAlign="center" mb="15px">GOLD</Heading>
                         <Heading as="h3" fontSize="16px" textAlign="center" mb="25px" color="#CB4335">Rs. 1500 / Monthly</Heading>
                     
